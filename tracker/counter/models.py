@@ -1,19 +1,14 @@
 from django.db import models
 
-class TemtemName(models.Model):
+class CounterNumber(models.Model):
     species = [
         ("Oree", "Oree"),
-        ("Babawa", "Babawa")
+        ("Babawa", "Babawa"),
+        ("Kinu", "Kinu"),
+        ("Saku", "Saku")
     ]
-    name = models.CharField(choices=species, max_length=200)
-    placeholder = models.CharField(max_length=200, default="Placeholder")
-
-    def __str__(self):
-        return self.name
-
-class CounterNumber(models.Model):
+    species = models.CharField(choices=species, max_length=200, unique=True, default="")
     value = models.IntegerField(default=0)
-    description = models.CharField(max_length=200)
 
     def __str__(self):
-        return self.description
+        return self.species

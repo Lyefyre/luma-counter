@@ -1,12 +1,7 @@
 from rest_framework import serializers
-from .models import CounterNumber, TemtemName
+from .models import CounterNumber
 
 class NumberSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = CounterNumber
-        fields = ('value', 'description')
-
-class TemSerializer(serializers.HyperlinkedModelSerializer):
-    class Meta:
-        model = TemtemName
-        fields = ('name', 'placeholder')
+        fields = ('species', 'value')
