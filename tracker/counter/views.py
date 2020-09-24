@@ -1,4 +1,4 @@
-from rest_framework import viewsets
+from rest_framework import viewsets, mixins, generics
 from .serializers import NumberSerializer
 from .models  import CounterNumber
 from rest_framework.decorators import action
@@ -10,3 +10,6 @@ class NumberViewSet(viewsets.ModelViewSet):
     """
     queryset = CounterNumber.objects.all()
     serializer_class = NumberSerializer
+
+    def put(self, request, *args, **kwargs):
+        return self.update(request, *args, **kwargs)
