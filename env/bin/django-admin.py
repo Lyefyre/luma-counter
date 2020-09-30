@@ -1,4 +1,4 @@
-#!/DebianDisk/home/valentin/luma/env/bin/python3
+#!/home/valentin/work/luma-counter/env/bin/python3
 # When the django-admin.py deprecation ends, remove this script.
 import warnings
 

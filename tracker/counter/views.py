@@ -11,5 +11,7 @@ class NumberViewSet(viewsets.ModelViewSet):
     queryset = CounterNumber.objects.all()
     serializer_class = NumberSerializer
 
-    def put(self, request, *args, **kwargs):
-        return self.update(request, *args, **kwargs)
+    #def put(self, request, *args, **kwargs):
+        #return self.update(request, *args, **kwargs)
+
+    
