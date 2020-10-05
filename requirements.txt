@@ -10,6 +10,7 @@ django-cors-headers==3.5.0
 django-filter==2.4.0
 django-imagekit==4.0.2
 djangorestframework==3.11.1
+drf-writable-nested==0.6.1
 filelock==3.0.12
 httpie==2.2.0
 httplib2==0.18.1

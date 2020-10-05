@@ -9,7 +9,8 @@ admin.site.register(SpeciesModel, SpeciesAdmin)
 class CounterAdmin(admin.ModelAdmin):
     list_display = [
         'species',
-        'value'
+        'value',
+        'id'
     ]
 
 admin.site.register(CounterNumber, CounterAdmin)
